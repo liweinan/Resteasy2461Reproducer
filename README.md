@@ -83,11 +83,11 @@ Caused by: java.lang.RuntimeException: RESTEASY010605: Unable to lookup BeanMana
 Remove the `resteasy-client-microprofile` dependency in `pom.xml`:
 
 ```xml
-        <dependency>
-            <groupId>org.jboss.resteasy</groupId>
-            <artifactId>resteasy-client-microprofile</artifactId>
-            <version>${resteasy.version}</version>
-        </dependency>
+<dependency>
+    <groupId>org.jboss.resteasy</groupId>
+    <artifactId>resteasy-client-microprofile</artifactId>
+    <version>${resteasy.version}</version>
+</dependency>
 ``` 
 
 Re-run the Jetty server and everything goes fine:
